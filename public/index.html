@@ -49,19 +49,149 @@
     <body>
 
         <!-- Add your site or application content here -->
+        <div class="page-wrap" id="j-page-wrap">
+            <div class="page">
+                <div class="header">
+                    <h2>HvUI</h2>
+                    <p>Tieba WebView UI</p>
+                    <span class="icon menu-icon"></span>
+                </div>
+                <section class="hvui-section">
+                    <a class="hvui-item j-hvui-item" href="#Color">
+                        <span class="hvui-icon">&copy;</span>
+                        <span class="hvui-text">Color</span>
+                    </a>
+                </section>
+                <section class="hvui-section">
+                    <a class="hvui-item j-hvui-item" href="#Button">
+                        <span class="hvui-icon">&sect;</span>
+                        <span class="hvui-text">Button</span>
+                    </a>
+                </section>
+                <section class="hvui-section">
+                    <a class="hvui-item j-hvui-item" href="#Section">
+                        <span class="hvui-icon">&reg;</span>
+                        <span class="hvui-text">Section</span>
+                    </a>
+                </section>
+                <section class="hvui-section">
+                    <a class="hvui-item j-hvui-item" href="#Section">
+                        <span class="hvui-icon">&yen;</span>
+                        <span class="hvui-text">Tab</span>
+                    </a>
+                </section>
+                <section class="hvui-section">
+                    <a class="hvui-item j-hvui-item" href="#Icon">
+                        <span class="hvui-icon">&cent;</span>
+                        <span class="hvui-text">Icon</span>
+                    </a>
+                </section>
+                <section class="hvui-section">
+                    <a class="hvui-item j-hvui-item" href="#IconFont">
+                        <span class="hvui-icon">&euro;</span>
+                        <span class="hvui-text">IconFont</span>
+                    </a>
+                </section>
+            </div>            
+        </div>
+        <script id="tpl-Color" type="text/html">
+            <div class="page">
+                <div class="header">
+                    <h2>Color</h2>
+                </div>
+                <div class="color-wrap">
+                    <h3>content foreground color</h3>
+                    <p class="hvui-color day-fg-deeper">@day-fg-deeper: #18191a;</p>
+                    <p class="hvui-color day-fg-deep">@day-fg-deep: #494b4c;</p>
+                    <p class="hvui-color day-fg-middle">@day-fg-middle: #7a7c80;</p>
+                    <p class="hvui-color day-fg-light">@day-fg-light: #abaeb2;</p>
+                    <p class="hvui-color day-fg-lighter">@day-fg-lighter: #c4c7cc;</p>
+                    <p class="hvui-color day-fg-bright">@day-fg-bright: @white;</p>
+                    <p class="hvui-color day-fg-highlight">@day-fg-highlight: #e53917;</p>
 
-        <script src="js/vendor/jquery-2.1.0.min.js"></script>
-        <script src="js/helper.js"></script>
+                    <h3>content background color</h3>
+                    <p class="hvui-color day-bg-deeper">@day-bg-deeper: #1e2133;</p>
+                    <p class="hvui-color day-bg-deep">@day-bg-deep: #c8cacc;</p>
+                    <p class="hvui-color day-bg-middle">@day-bg-middle: #e1e3e5;</p>
+                    <p class="hvui-color day-bg-light">@day-bg-light: #ebedf0;</p>
+                    <p class="hvui-color day-bg-lighter">@day-bg-lighter: #f5f7fa;</p>
+                    <p class="hvui-color day-bg-bright">@day-bg-bright: @white;</p>
+                    <p class="hvui-color day-bg-dark">@day-bg-dark: #292e47;</p>
+                    <p class="hvui-color day-bg-darker">@day-bg-darker: #1e2133;</p>
+
+                    <h3>sub color</h3>
+                    <p class="hvui-color day-deep-blue">@day-deep-blue: #3668b2;</p>
+                    <p class="hvui-color day-middle-blue">@day-middle-blue: #3385ff;</p>
+                    <p class="hvui-color day-light-blue">@day-light-blue: #33aaff;</p>
+                    <p class="hvui-color day-orange">@day-orange: #f55925;</p>
+                    <p class="hvui-color day-violet">@day-violet: #673699;</p>
+                    <p class="hvui-color day-pink">@day-pink: #ff5460;</p>
+                    <p class="hvui-color day-green">@day-green: #26bf85;</p>
+                    <p class="hvui-color day-yellow">@day-yellow: #ff821c;</p>
+                </div>
+            </div>
+        </script>
+        <script id="tpl-Button" type="text/html">
+            <div class="page">
+                <div class="header">
+                    <h2>Button</h2>
+                </div>
+                <div class="btn-wrap">
+                    <button type="button" class="hvui-btn btn-default">签到</button>
+                    <button type="button" class="hvui-btn btn-primary">确定</button>
+                    <button type="button" class="hvui-btn btn-pay">立即支付</button>
+                    <button type="button" class="hvui-btn btn-attention">+关注</button>
+                    <button type="button" class="hvui-btn btn-attention btn-night">+关注（夜间）</button>
+                    <button type="button" class="hvui-btn btn-attention btn-disable">+关注（置灰）</button>
+                    <a href="javascript:void(0);" class="hvui-btn btn-attention">link Button</a>
+                </div>
+            </div>
+        </script>
+        <script id="tpl-Section" type="text/html">
+            <div class="page">
+                <div class="header">
+                    <h2>Section</h2>
+                </div>
+                <section class="hvui-section">
+                    <h3 class="hvui-section-title">Section Title</h3>
+                    <div class="hvui-section-content">
+                        <a class="hvui-item j-hvui-item" href="javascript:void(0);">
+                            <span class="hvui-icon">&copy;</span>
+                            <span class="hvui-text">ComplexSection</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </script>
+        <script id="tpl-Tab" type="text/html">
+            <div class="page">
+                <div class="header">
+                    <h2>Tab</h2>
+                </div>
+                <section class="hvui-section">
+                    <h3 class="hvui-section-title">Section Title</h3>
+                    <div class="hvui-section-content">
+                        <a class="hvui-item j-hvui-item" href="javascript:void(0);">
+                            <span class="hvui-icon">&copy;</span>
+                            <span class="hvui-text">ComplexSection</span>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </script>
+        <!-- <script src="js/vendor/jquery-2.1.0.min.js"></script> -->
+        <!-- <script src="js/helper.js"></script> -->
+        <script src="js/zepto.min.js"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
+        <!-- <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+        </script> -->
     </body>
 </html>
