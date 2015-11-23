@@ -438,6 +438,7 @@ body {
 .hvui-btn-small {
     font-size: 1em;
     padding: 0 10px;
+    border-radius: 2px;
 }
 
 .hvui-btn-large {
