@@ -75,9 +75,21 @@
                     </a>
                 </section>
                 <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#Section">
+                    <a class="hvui-item j-hvui-item" href="#Tab">
                         <span class="hvui-icon">&yen;</span>
                         <span class="hvui-text">Tab</span>
+                    </a>
+                </section>
+                <section class="hvui-section">
+                    <a class="hvui-item j-hvui-item" href="#List">
+                        <span class="hvui-icon">&yen;</span>
+                        <span class="hvui-text">List</span>
+                    </a>
+                </section>
+                <section class="hvui-section">
+                    <a class="hvui-item j-hvui-item" href="#Media">
+                        <span class="hvui-icon">&yen;</span>
+                        <span class="hvui-text">Media</span>
                     </a>
                 </section>
                 <section class="hvui-section">
@@ -137,6 +149,7 @@
                     <h2>Button</h2>
                 </div>
                 <div class="btn-wrap">
+                    <h4>Button default size</h4>
                     <button type="button" class="hvui-btn btn-default">签到</button>
                     <button type="button" class="hvui-btn btn-primary">确定</button>
                     <button type="button" class="hvui-btn btn-pay">立即支付</button>
@@ -144,6 +157,26 @@
                     <button type="button" class="hvui-btn btn-attention btn-night">+关注（夜间）</button>
                     <button type="button" class="hvui-btn btn-attention btn-disable">+关注（置灰）</button>
                     <a href="javascript:void(0);" class="hvui-btn btn-attention">link Button</a>
+                </div>
+                <div class="btn-wrap">
+                    <h4>Button small size</h4>
+                    <button type="button" class="hvui-btn hvui-btn-small btn-default">签到</button>
+                    <button type="button" class="hvui-btn hvui-btn-small btn-primary">确定</button>
+                    <button type="button" class="hvui-btn hvui-btn-small btn-pay">立即支付</button>
+                    <button type="button" class="hvui-btn hvui-btn-small btn-attention">+关注</button>
+                    <button type="button" class="hvui-btn hvui-btn-small btn-attention btn-night">+关注（夜间）</button>
+                    <button type="button" class="hvui-btn hvui-btn-small btn-attention btn-disable">+关注（置灰）</button>
+                    <a href="javascript:void(0);" class="hvui-btn hvui-btn-small btn-attention">link Button</a>
+                </div>
+                <div class="btn-wrap">
+                    <h4>Button large size</h4>
+                    <button type="button" class="hvui-btn hvui-btn-large btn-default">签到</button>
+                    <button type="button" class="hvui-btn hvui-btn-large btn-primary">确定</button>
+                    <button type="button" class="hvui-btn hvui-btn-large btn-pay">立即支付</button>
+                    <button type="button" class="hvui-btn hvui-btn-large btn-attention">+关注</button>
+                    <button type="button" class="hvui-btn hvui-btn-large btn-attention btn-night">+关注（夜间）</button>
+                    <button type="button" class="hvui-btn hvui-btn-large btn-attention btn-disable">+关注（置灰）</button>
+                    <a href="javascript:void(0);" class="hvui-btn hvui-btn-large btn-attention">link Button</a>
                 </div>
             </div>
         </script>
@@ -168,15 +201,124 @@
                 <div class="header">
                     <h2>Tab</h2>
                 </div>
-                <section class="hvui-section">
-                    <h3 class="hvui-section-title">Section Title</h3>
-                    <div class="hvui-section-content">
-                        <a class="hvui-item j-hvui-item" href="javascript:void(0);">
-                            <span class="hvui-icon">&copy;</span>
-                            <span class="hvui-text">ComplexSection</span>
-                        </a>
+                <div class="tab-wrap">
+                    <div class="hvui-tab hvui-tab-default">
+                        <a class="hvui-tab-item active" href="javascript:void(0)"><i class="hvui-icon">&gt;</i>北京</a>
+                        <a class="hvui-tab-item" href="javascript:void(0)"><i class="hvui-icon">&lt;</i>上海</a>
+                        <a class="hvui-tab-item" href="javascript:void(0)"><i class="hvui-icon">&copy;</i>成都</a>
                     </div>
-                </section>
+                </div>
+            </div>
+        </script>
+        <script id="tpl-List" type="text/html">
+            <div class="page">
+                <div class="header">
+                    <h2>List</h2>
+                </div>
+                <ul class="hvui-list">
+                    <li class="hvui-list-item">content</li>
+                    <li class="hvui-list-item">content</li>
+                    <li class="hvui-list-item">content</li>
+                    <li class="hvui-list-item">content</li>
+                </ul>
+            </div>
+        </script>
+        <script id="tpl-Media" type="text/html">
+            <div class="page">
+                <div class="header">
+                    <h2>Media</h2>
+                </div>
+                <div class="hvui-media clearfix">
+                    <div class="hvui-media-left">
+                        <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
+                    </div>
+                    <div class="hvui-media-right">
+                        <h4>图文title</h4>
+                        <p>图文content，content撒发拉萨地方哈是的</p>
+                    </div>
+                </div>
+                <div class="hvui-media clearfix">
+                    <div class="hvui-media-left">
+                        <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="50" width="50" alt="test-img" />
+                    </div>
+                    <div class="hvui-media-right">
+                        <p>图文title</p>
+                    </div>
+                </div>
+                <div class="hvui-media-flex">
+                    <div class="hvui-media-item">
+                        <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
+                    </div>
+                    <div class="hvui-media-item">
+                        <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
+                    </div>
+                    <div class="hvui-media-item">
+                        <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
+                    </div>
+                </div>
+                <h4>下面是结合List使用时的样式</h4>
+                <ul class="hvui-list">
+                    <li class="hvui-list-item hvui-media clearfix">
+                        <div class="hvui-media-left">
+                            <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
+                        </div>
+                        <div class="hvui-media-right">
+                            <h4>图文title</h4>
+                            <p>图文content，content撒发拉萨地方哈是的</p>
+                        </div>
+                    </li>
+                    <li class="hvui-list-item hvui-media">
+                        <a href="javascript:void(0)" class="clearfix">
+                            <div class="hvui-media-left">
+                                <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
+                            </div>
+                            <div class="hvui-media-right">
+                                <h4>图文title</h4>
+                                <p>图文content，content撒发拉萨地方哈是的</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvui-list-item hvui-media clearfix">
+                        <div class="hvui-media-left">
+                            <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="50" width="50" alt="test-img" />
+                        </div>
+                        <div class="hvui-media-right">
+                            <p>图文title</p>
+                        </div>
+                    </li>
+                    <li class="hvui-list-item hvui-media">
+                        <a href="javascript:void(0)" class="clearfix">
+                            <div class="hvui-media-left">
+                                <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="50" width="50" alt="test-img" />
+                            </div>
+                            <div class="hvui-media-right">
+                                <p>图文title</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="hvui-list-item hvui-media-flex">
+                        <div class="hvui-media-item">
+                            <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
+                        </div>
+                        <div class="hvui-media-item">
+                            <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
+                        </div>
+                        <div class="hvui-media-item">
+                            <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
+                        </div>
+                    </li>
+                    <li class="hvui-list-item hvui-media-flex">
+                        <div class="hvui-media-item">
+                            <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="50" width="50" alt="test-img" />
+                        </div>
+                        <div class="hvui-media-item hvui-media-item-3">
+                            <p>图文content，content撒发拉萨地方哈是的</p>
+                        </div>
+                        <div class="hvui-media-item">
+                            <button type="button" class="hvui-btn btn-default">即将开始</button>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </script>
         <!-- <script src="js/vendor/jquery-2.1.0.min.js"></script> -->
