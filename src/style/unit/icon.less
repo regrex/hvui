@@ -1,1 +1,20 @@
 // icon style
+
+.hvui-icon-level {
+    display: inline-block;
+    width: 25px;
+    height: 15px;
+    color: transparent;
+    background: url(../../img/level/level-all.png) no-repeat;
+    background-size: 25px auto;
+    vertical-align: bottom;
+}
+
+.loop(@count, @i: 0) when (@i =< @count) {
+    .hvui-icon-level-@{i} {
+        background-position: 0 0px-15*@i;
+    }
+    .loop(@count, @i + 1);
+}
+
+.loop(18);

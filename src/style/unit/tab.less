@@ -1,0 +1,44 @@
+/**
+ * @file common tab style in hvui
+ * @author dengxi
+ * @date 20151104
+ */
+
+.hvui-tab.hvui-tab-default {
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #e3e4e6;
+}
+
+.hvui-tab-item {
+    position: relative;
+    display: block;
+    width: 100%;
+    -webkit-box-flex: 1;
+    background-color: #fcfdff;
+    line-height: 2.8;
+    color: #626466;
+    -webkit-tap-highlight-color: transparent;
+    flex: 1;
+}
+
+.hvui-tab-item:active {
+    background-color: #e1e3e6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2) inset;
+}
+
+.hvui-tab-item.active {
+    color: #3988fb;
+}
+
+.hvui-tab-item.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    height: 2px;
+    width: 100%;
+    margin-left: -50%;
+    background-color: #3988fb;
+}
