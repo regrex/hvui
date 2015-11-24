@@ -494,7 +494,6 @@ a.hvui-btn:visited {
   position: relative;
   display: block;
   width: 100%;
-  -webkit-box-flex: 1;
   background-color: #fcfdff;
   line-height: 2.8;
   color: #626466;
