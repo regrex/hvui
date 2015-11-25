@@ -392,30 +392,17 @@
                 <h4>下面是各个表单元素的独立样式</h4>
                 <input class="hvui-form-input" type="text" placeholder="有标题的贴子才够帅" />
                 <textarea class="hvui-form-input" placeholder="描述写得帅，度娘才会爱"></textarea>
+                <input class="hvui-form-search" type="search" name="userName" placeholder="搜索用户">
                 <select class="hvui-form-select">
                     <option>选项一</option>
                     <option>选项二</option>
                 </select>
-                <div class="hvui-form-switch">
-                    <input type="checkbox" id="hvui-form-switch" name="switch" />
-                    <label for="hvui-form-switch"></label>
-                </div>
-                <div class="hvui-form-chekbox">
-                    <input type="checkbox" value="eat" id="hvui-form-chekbox-1" name="hobby" />
-                    <label for="hvui-form-chekbox-1"></label>
-                </div>
-                <div class="hvui-form-chekbox">
-                    <input type="checkbox" value="sleep" id="hvui-form-chekbox-3" name="hobby" checked />
-                    <label for="hvui-form-chekbox-3"></label>
-                </div>
-                <div class="hvui-form-radio">
-                    <input type="radio" value="male" id="hvui-form-radio-1" name="sex" />
-                    <label for="hvui-form-radio-1"></label>
-                </div>
-                <div class="hvui-form-radio">
-                    <input type="radio" value="famale" id="hvui-form-radio-2" name="sex" checked />
-                    <label for="hvui-form-radio-2"></label>
-                </div>
+                <input class="hvui-form-switch" type="checkbox" name="switch" />
+                <input class="hvui-form-switch" type="checkbox" name="switch" checked />
+                <label for="hvui-form-checkbox-1" class="hvui-form-checkbox"><input type="checkbox" value="eat" id="hvui-form-checkbox-1" name="hobby" /><i></i></label>
+                <label for="hvui-form-checkbox-3" class="hvui-form-checkbox"><input type="checkbox" value="sleep" id="hvui-form-checkbox-3" name="hobby" checked /><i></i></label>
+                <label for="hvui-form-radio-1" class="hvui-form-radio"><input type="radio" value="male" id="hvui-form-radio-1" name="sex" /><i></i></label>
+                <label for="hvui-form-radio-2" class="hvui-form-radio"><input type="radio" value="famale" id="hvui-form-radio-2" name="sex" checked /><i></i></label>
                 <h4>下面是Form结合Section和List使用时的样式</h4>
                 <form class="hvui-form">
                     <fieldset>
@@ -437,38 +424,35 @@
                             <ul class="hvui-list">
                                 <li class="hvui-list-item">
                                     <span>显示图片</span>
-                                    <div class="hvui-form-switch">
-                                        <input type="checkbox" id="hvui-form-list-switch" name="switch" />
-                                        <label for="hvui-form-list-switch"></label>
-                                    </div>
+                                    <input class="hvui-form-switch" type="checkbox" name="switch" />
                                 </li>
                                 <li class="hvui-list-item">
                                     <span>爱好：吃</span>
-                                    <div class="hvui-form-chekbox">
+                                    <label for="hvui-form-list-chekbox-1" class="hvui-form-checkbox">
                                         <input type="checkbox" value="eat" id="hvui-form-list-chekbox-1" name="hobby" />
-                                        <label for="hvui-form-list-chekbox-1"></label>
-                                    </div>
+                                        <i></i>
+                                    </label>
                                 </li>
                                 <li class="hvui-list-item">
                                     <span>爱好：睡</span>
-                                    <div class="hvui-form-chekbox">
-                                        <input type="checkbox" value="sleep" id="hvui-form-list-chekbox-3" name="hobby" checked />
-                                        <label for="hvui-form-list-chekbox-3"></label>
-                                    </div>
+                                    <label for="hvui-form-list-chekbox-2" class="hvui-form-checkbox">
+                                        <input type="checkbox" value="sleep" id="hvui-form-list-chekbox-2" name="hobby" checked />
+                                        <i></i>
+                                    </label>
                                 </li>
                                 <li class="hvui-list-item">
                                     <span>性别：女</span>
-                                    <div class="hvui-form-radio">
+                                    <label for="hvui-form-list-radio-1" class="hvui-form-radio">
                                         <input type="radio" value="male" id="hvui-form-list-radio-1" name="sex" />
-                                        <label for="hvui-form-list-radio-1"></label>
-                                    </div>
+                                        <i></i>
+                                    </label>
                                 </li>
                                 <li class="hvui-list-item">
                                     <span>性别：男</span>
-                                    <div class="hvui-form-radio">
+                                    <label for="hvui-form-list-radio-2" class="hvui-form-radio">
                                         <input type="radio" value="famale" id="hvui-form-list-radio-2" name="sex" checked />
-                                        <label for="hvui-form-list-radio-2"></label>
-                                    </div>
+                                        <i></i>
+                                    </label>
                                 </li>
                             </ul>
                         </div>
