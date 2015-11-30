@@ -304,7 +304,6 @@ body {
 .page.Tab,
 .page.List,
 .page.Form,
-.page.Media,
 .page.Section {
     background-color: #edeef0;
 }
@@ -316,6 +315,12 @@ body {
 }
 .color-wrap h3 {
     text-align: center;
+}
+.page.Button .hvui-btn {
+    margin-bottom: 10px;
+}
+ul.hvui-list {
+    padding: 0;
 }
 .hvui-color {
     display: block;
@@ -410,6 +415,9 @@ a.hvui-section:active {
     background-color: #e1e3e6;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
 }
+.hvui-section-single {
+    margin-bottom: 10px;
+}
 .hvui-section-x {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -432,14 +440,15 @@ a.hvui-section:active {
     -ms-flex-direction: column;
     flex-direction: column;
 }
-.hvui-section-y .hvui-section-hd {
+.hvui-section-y > .hvui-section-hd {
     padding-bottom: 10px;
     border-bottom: 1px solid #e3e4e6;
+    margin: 0;
 }
-.hvui-section-y .hvui-section-bd {
+.hvui-section-y > .hvui-section-bd {
     padding: 10px 0;
 }
-.hvui-section-y .hvui-section-ft {
+.hvui-section-y > .hvui-section-ft {
     border-top: 1px solid #e3e4e6;
     padding-top: 10px;
 }
@@ -568,30 +577,6 @@ a.hvui-list-item {
 a.hvui-list-item:active {
     background-color: #e1e3e6;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
-}
-.hvui-media-left {
-    float: left;
-    margin-right: 10px;
-}
-.hvui-media-flex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
-.hvui-media-item {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    text-align: center;
-}
-.hvui-media-item-3 {
-    -webkit-box-flex: 3;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    padding: 0 10px;
 }
 .hvui-icon-level {
     display: inline-block;
@@ -802,4 +787,76 @@ input[type=checkbox].hvui-form-switch {
 .hvui-form-radio input[type=radio]:checked + i::after {
     opacity: 1;
 }
+
+
+@font-face {font-family: "iconfont";
+  src: url('../font/iconfont.eot'); /* IE9*/
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../font/iconfont.woff') format('woff'), /* chrome, firefox */
+  url('../font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../font/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.hvui-iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvui-iconfont-mall:before { content: "\e600"; }
+.hvui-iconfont-add:before { content: "\e601"; }
+.hvui-iconfont-addFriend:before { content: "\e602"; }
+.hvui-iconfont-camera:before { content: "\e603"; }
+.hvui-iconfont-change:before { content: "\e604"; }
+.hvui-iconfont-closeMico:before { content: "\e605"; }
+.hvui-iconfont-download:before { content: "\e606"; }
+.hvui-iconfont-exit:before { content: "\e607"; }
+.hvui-iconfont-data:before { content: "\e608"; }
+.hvui-iconfont-news:before { content: "\e609"; }
+.hvui-iconfont-clock:before { content: "\e60a"; }
+.hvui-iconfont-member:before { content: "\e60c"; }
+.hvui-iconfont-menu:before { content: "\e60d"; }
+.hvui-iconfont-mico:before { content: "\e60e"; }
+.hvui-iconfont-myFirend:before { content: "\e60f"; }
+.hvui-iconfont-myPost:before { content: "\e610"; }
+.hvui-iconfont-near:before { content: "\e611"; }
+.hvui-iconfont-noImg:before { content: "\e612"; }
+.hvui-iconfont-post:before { content: "\e613"; }
+.hvui-iconfont-rubish:before { content: "\e614"; }
+.hvui-iconfont-sortUp:before { content: "\e615"; }
+.hvui-iconfont-sortDown:before { content: "\e616"; }
+.hvui-iconfont-voice:before { content: "\e617"; }
+.hvui-iconfont-write:before { content: "\e619"; }
+.hvui-iconfont-share:before { content: "\e61a"; }
 /* hvui-unit end */
+.iconfont-list {
+    margin: 0;
+    padding: 0;
+}
+.iconfont-list li {
+    float: left;
+    display: block;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+}
+
+.iconfont-list .hvui-iconfont {
+    font-size: 50px;
+    transition: font-size 0.25s ease-out 0s;
+    line-height: 100px;
+}
+
+.iconfont-list .hvui-iconfont:hover {
+    font-size: 100px;
+}
+
+.no-class-iconfont li {
+    width: 100%;
+}
+
+.no-class-iconfont code {
+    display: block;
+}
