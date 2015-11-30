@@ -279,9 +279,6 @@ body {
     background-color: #edeef0;
     color: #18191a;
 }
-.hvui-item {
-    display: block;
-}
 .page-wrap,
 .page {
     position: absolute;
@@ -316,107 +313,6 @@ body {
 }
 .btn-wrap {
     padding: 0 10px;
-}
-.hvui-section {
-    background-color: #fff;
-    margin-bottom: 10px;
-    padding: 10px;
-    position: relative;
-}
-/*.hvui-section::after {
-    content: '>';
-    color: #abaeb3;
-    font-family: serif;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}*/
-.hvui-section a {
-    margin: -10px;
-    padding: 10px;
-}
-.hvui-section a:active {
-    background-color: #e1e3e6;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
-}
-.hvui-section-title {
-    display: block;
-    color: #494b4c;
-    font-weight: normal;
-    line-height: 1;
-    margin: 0;
-    border-bottom: 1px solid #e3e4e6;
-    padding-bottom: 10px;
-}
-.hvui-btn {
-    box-sizing: border-box;
-    margin: 10px auto;
-    padding: 0 14px;
-    font-size: 1.4em;
-    line-height: 2;
-    border-radius: 4px;
-    outline: 0;
-    border: 0;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    color: #fff;
-}
-.hvui-btn-small {
-    font-size: 1em;
-    padding: 0 10px;
-    border-radius: 2px;
-}
-.hvui-btn-large {
-    display: block;
-    width: 100%;
-}
-a.hvui-btn {
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-}
-a.hvui-btn-large {
-    display: block;
-}
-a.hvui-btn:hover,
-a.hvui-btn:active,
-a.hvui-btn:visited {
-    color: #fff;
-}
-.hvui-btn-default {
-    background-color: #f7f8fa;
-    color: #3668b2;
-    border: 1px solid #e3e4e5;
-}
-.hvui-btn-default:active {
-    border-color: #e1e3e6;
-    background-color: #e1e3e6;
-}
-.hvui-btn-primary {
-    background-color: #3385ff;
-}
-.hvui-btn-primary:active {
-    background-color: #296acc;
-}
-.hvui-btn-pay {
-    background-color: #fa702a;
-}
-.hvui-btn-pay:active {
-    background-color: #c75922;
-}
-.hvui-btn-attention {
-    background-color: #f2460c;
-}
-.hvui-btn-attention:active {
-    background-color: #bf370a;
-}
-.hvui-btn-disable {
-    opacity: .3;
-}
-.hvui-btn-disable:active {
-    /* Todo: 干掉active的color */
-}
-.hvui-btn-night {
-    opacity: .7;
 }
 .color-wrap h3 {
     text-align: center;
@@ -499,6 +395,123 @@ a.hvui-btn:visited {
 .day-yellow {
     background-color: #ff821c;
 }
+
+/* hvui-unit start */
+.hvui-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #fff;
+    padding: 10px;
+    position: relative;
+}
+a.hvui-section:active {
+    background-color: #e1e3e6;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
+}
+.hvui-section-x {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.hvui-section-y {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.hvui-section-y .hvui-section-hd {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e3e4e6;
+}
+.hvui-section-y .hvui-section-bd {
+    padding: 10px 0;
+}
+.hvui-section-y .hvui-section-ft {
+    border-top: 1px solid #e3e4e6;
+    padding-top: 10px;
+}
+.hvui-btn {
+    box-sizing: border-box;
+    padding: 0 14px;
+    font-size: 1.4em;
+    line-height: 2;
+    border-radius: 4px;
+    outline: 0;
+    border: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+.hvui-btn-small {
+    font-size: 1em;
+    padding: 0 10px;
+    border-radius: 2px;
+}
+.hvui-btn-large {
+    display: block;
+    width: 100%;
+}
+a.hvui-btn {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+a.hvui-btn-large {
+    display: block;
+}
+a.hvui-btn:hover,
+a.hvui-btn:active,
+a.hvui-btn:visited {
+    color: #fff;
+}
+.hvui-btn-default {
+    background-color: #f7f8fa;
+    color: #3668b2;
+    border: 1px solid #e3e4e5;
+}
+.hvui-btn-default:active {
+    border-color: #e1e3e6;
+    background-color: #e1e3e6;
+}
+.hvui-btn-primary {
+    background-color: #3385ff;
+}
+.hvui-btn-primary:active {
+    background-color: #296acc;
+}
+.hvui-btn-pay {
+    background-color: #fa702a;
+}
+.hvui-btn-pay:active {
+    background-color: #c75922;
+}
+.hvui-btn-attention {
+    background-color: #f2460c;
+}
+.hvui-btn-attention:active {
+    background-color: #bf370a;
+}
+.hvui-btn-disable {
+    opacity: .3;
+}
+.hvui-btn-disable:active {
+    /* Todo: 干掉active的color */
+}
+.hvui-btn-night {
+    opacity: .7;
+}
 .hvui-tab.hvui-tab-default {
     display: -webkit-box;
     display: -webkit-flex;
@@ -540,20 +553,19 @@ a.hvui-btn:visited {
 }
 .hvui-list {
     background-color: #fff;
-    padding-left: 0;
-    margin: 0;
 }
 .hvui-list-item {
     list-style: none;
     border-bottom: 1px solid #e1e3e6;
     padding: 10px;
 }
-.hvui-list-item a {
-    display: block;
-    margin: -10px;
-    padding: 10px;
+.hvui-list-item:last-child {
+    border-bottom: 0;
 }
-.hvui-list-item a:active {
+a.hvui-list-item {
+    display: list-item;
+}
+a.hvui-list-item:active {
     background-color: #e1e3e6;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2) inset;
 }
@@ -790,4 +802,4 @@ input[type=checkbox].hvui-form-switch {
 .hvui-form-radio input[type=radio]:checked + i::after {
     opacity: 1;
 }
-
+/* hvui-unit end */

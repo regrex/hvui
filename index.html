@@ -56,60 +56,44 @@
                     <p>Tieba WebView UI</p>
                     <span class="icon menu-icon"></span>
                 </div>
-                <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#Color">
+                <div class="hvui-list">
+                    <a class="hvui-list-item j-hvui-item" href="#Color">
                         <span class="hvui-icon">&copy;</span>
                         <span class="hvui-text">Color</span>
                     </a>
-                </section>
-                <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#Button">
+                    <a class="hvui-list-item j-hvui-item" href="#Button">
                         <span class="hvui-icon">&sect;</span>
                         <span class="hvui-text">Button</span>
                     </a>
-                </section>
-                <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#Section">
+                    <a class="hvui-list-item j-hvui-item" href="#Section">
                         <span class="hvui-icon">&reg;</span>
                         <span class="hvui-text">Section</span>
                     </a>
-                </section>
-                <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#Tab">
+                    <a class="hvui-list-item j-hvui-item" href="#Tab">
                         <span class="hvui-icon">&yen;</span>
                         <span class="hvui-text">Tab</span>
                     </a>
-                </section>
-                <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#List">
+                    <a class="hvui-list-item j-hvui-item" href="#List">
                         <span class="hvui-icon">&yen;</span>
                         <span class="hvui-text">List</span>
                     </a>
-                </section>
-                <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#Media">
+                    <a class="hvui-list-item j-hvui-item" href="#Media">
                         <span class="hvui-icon">&yen;</span>
                         <span class="hvui-text">Media</span>
                     </a>
-                </section>
-                <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#Icon">
+                    <a class="hvui-list-item j-hvui-item" href="#Icon">
                         <span class="hvui-icon">&cent;</span>
                         <span class="hvui-text">Icon</span>
                     </a>
-                </section>
-                <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#Form">
+                    <a class="hvui-list-item j-hvui-item" href="#Form">
                         <span class="hvui-icon">&cent;</span>
                         <span class="hvui-text">Form</span>
                     </a>
-                </section>
-                <section class="hvui-section">
-                    <a class="hvui-item j-hvui-item" href="#IconFont">
+                    <a class="hvui-list-item j-hvui-item" href="#IconFont">
                         <span class="hvui-icon">&euro;</span>
                         <span class="hvui-text">IconFont</span>
                     </a>
-                </section>
+                </div>
             </div>            
         </div>
         <script id="tpl-Color" type="text/html">
@@ -191,13 +175,38 @@
                 <div class="header">
                     <h2>Section</h2>
                 </div>
+                <h4>简单的不可点击的section</h4>
                 <section class="hvui-section">
-                    <h3 class="hvui-section-title">Section Title</h3>
-                    <div class="hvui-section-content">
-                        <a class="hvui-item j-hvui-item" href="javascript:void(0);">
+                    <span class="hvui-icon">&copy;</span>
+                    <span class="hvui-text">ComplexSection</span>
+                </section>
+                <h4>简单的可点击的section</h4>
+                <a href="javascript:void(0);" class="hvui-section">
+                    <span class="hvui-icon">&copy;</span>
+                    <span class="hvui-text">ComplexSection</span>
+                </a>
+                <h4>包含head，body和foot的水平排列的section</h4>
+                <section class="hvui-section hvui-section-x">
+                    <div class="hvui-section-hd">Section Title</div>
+                    <div class="hvui-section-bd">
+                        <a href="javascript:void(0);">
                             <span class="hvui-icon">&copy;</span>
                             <span class="hvui-text">ComplexSection</span>
                         </a>
+                    </div>
+                    <div class="hvui-section-ft">
+                        <button type="button" class="hvui-btn hvui-btn-small hvui-btn-default">取消</button>
+                    </div>
+                </section>
+                <h4>包含head，body和foot的垂直排列的section</h4>
+                <section class="hvui-section hvui-section-y">
+                    <div class="hvui-section-hd">Section Title</div>
+                    <div class="hvui-section-bd hvui-list">
+                        <div class="hvui-list-item">content</div>
+                        <a href="javascript:void(0);" class="hvui-list-item">content can be click</a>
+                    </div>
+                    <div class="hvui-section-ft">
+                        <button type="button" class="hvui-btn hvui-btn-large hvui-btn-primary">确定</button>
                     </div>
                 </section>
             </div>
@@ -221,14 +230,10 @@
                 <div class="header">
                     <h2>List</h2>
                 </div>
-                <ul class="hvui-list">
-                    <li class="hvui-list-item">content</li>
-                    <li class="hvui-list-item">
-                        <a href="javascript:void(0);">content can be click</a>
-                    </li>
-                    <li class="hvui-list-item">content</li>
-                    <li class="hvui-list-item">content</li>
-                </ul>
+                <div class="hvui-list">
+                    <div class="hvui-list-item">content</div>
+                    <a href="javascript:void(0);" class="hvui-list-item">content can be click</a>
+                </div>
             </div>
         </script>
         <script id="tpl-Media" type="text/html">
@@ -330,7 +335,7 @@
                 <h4>下面是结合Section使用时的样式</h4>
                 <section class="hvui-section">
                     <div class="hvui-section-content">
-                        <a class="hvui-item j-hvui-item" href="javascript:void(0);">
+                        <a href="javascript:void(0);">
                             <div class="hvui-media-left">
                                 <img src="img/touch/apple-touch-icon-114x114-precomposed.png" height="114" width="114" alt="test-img" />
                             </div>
