@@ -447,9 +447,9 @@ a.hvui-section:active {
 }
 .hvui-section-y > .hvui-section-bd {
     padding: 10px 0;
+    border-bottom: 1px solid #e3e4e6;
 }
 .hvui-section-y > .hvui-section-ft {
-    border-top: 1px solid #e3e4e6;
     padding-top: 10px;
 }
 .hvui-btn {
@@ -511,6 +511,13 @@ a.hvui-btn:visited {
 }
 .hvui-btn-attention:active {
     background-color: #bf370a;
+}
+.hvui-btn-link {
+    background-color: transparent;
+    color: #3385ff;
+}
+.hvui-btn-link:active {
+    color: #296acc;
 }
 .hvui-btn-disable {
     opacity: .3;
@@ -645,26 +652,143 @@ a.hvui-list-item:active {
 .hvui-icon-level-18 {
     background-position: 0 -270px;
 }
+.hvui-icon-crown {
+    background-image: url(../img/icon/crown-all-24.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+}
+
+.hvui-icon-crown-super-non {
+    background-position: 0 0;
+}
+
+.hvui-icon-crown-super-non1 {
+    background-position: 0 -24px;
+}
+
+.hvui-icon-crown-super-non2 {
+    background-position: 0 -48px;
+}
+
+.hvui-icon-crown-super-non3 {
+    background-position: 0 -72px;
+}
+
+.hvui-icon-crown-super-non4 {
+    background-position: 0 -96px;
+}
+
+.hvui-icon-crown-super-non5 {
+    background-position: 0 -120px;
+}
+
+.hvui-icon-crown-super-v1 {
+    background-position: 0 -144px;
+}
+
+.hvui-icon-crown-super-v2 {
+    background-position: 0 -168px;
+}
+
+.hvui-icon-crown-super-v3 {
+    background-position: 0 -192px;
+}
+
+.hvui-icon-crown-super-v4 {
+    background-position: 0 -216px;
+}
+
+.hvui-icon-crown-super-v5 {
+    background-position: 0 -240px;
+}
+
+.hvui-icon-crown-super-vip {
+    background-position: 0 -264px;
+}
+
+.hvui-icon-crown-vip {
+    background-position: 0 -288px;
+}
+
+.hvui-icon-crown-vip-non {
+    background-position: 0 -312px;
+}
+
+.hvui-icon-crown-year-v1 {
+    background-position: 0 -336px;
+}
+
+.hvui-icon-crown-year-v2 {
+    background-position: 0 -360px;
+}
+
+.hvui-icon-crown-year-v3 {
+    background-position: 0 -384px;
+}
+
+.hvui-icon-crown-year-v4 {
+    background-position: 0 -408px;
+}
+
+.hvui-icon-crown-year-v5 {
+    background-position: 0 -432px;
+}
+
+.hvui-icon-crown-year-vip {
+    background-position: 0 -456px;
+}
+
 .hvui-form-input,
 .hvui-form-select {
     display: block;
-    width: 100%;
     padding: 10px;
     border: 0;
     border-bottom: 1px solid #e3e4e6;
     box-sizing: border-box;
+    width: 100%;
 }
 .hvui-form-input:focus,
 .hvui-form-select:focus {
     outline: 0;
     border-color: #54a6ea;
 }
+.hvui-form-select-inline {
+    width: auto;
+}
 .hvui-form-search {
+    position: relative;
     background-color: #ebedf0;
+    border-radius: 4px;
+}
+.hvui-form-search::before,
+.hvui-form-search::after {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 50%;
+    margin-top: -11px;
+}
+.hvui-form-search::before {
+    content: '\e60f';
+    left: 10px;
+}
+.hvui-form-search::after {
+    content: '\e60b';
+    right: 10px;
+}
+.hvui-form-search input {
+    padding: 10px 30px;
     outline: 0;
     border: 0;
-    border-radius: 4px;
-    padding: 10px 8px;
+    background-color: transparent;
+    width: 100%;
+    box-sizing: border-box;
 }
 input[type=checkbox],
 input[type=radio] {
@@ -798,38 +922,34 @@ input[type=checkbox].hvui-form-switch {
 }
 
 .hvui-iconfont {
-  font-family:"iconfont" !important;
-  font-size:16px;
-  font-style:normal;
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
   -webkit-font-smoothing: antialiased;
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-.hvui-iconfont-mall:before { content: "\e600"; }
-.hvui-iconfont-add:before { content: "\e601"; }
-.hvui-iconfont-addFriend:before { content: "\e602"; }
-.hvui-iconfont-camera:before { content: "\e603"; }
-.hvui-iconfont-change:before { content: "\e604"; }
-.hvui-iconfont-closeMico:before { content: "\e605"; }
-.hvui-iconfont-download:before { content: "\e606"; }
-.hvui-iconfont-exit:before { content: "\e607"; }
-.hvui-iconfont-data:before { content: "\e608"; }
-.hvui-iconfont-news:before { content: "\e609"; }
-.hvui-iconfont-clock:before { content: "\e60a"; }
-.hvui-iconfont-member:before { content: "\e60c"; }
-.hvui-iconfont-menu:before { content: "\e60d"; }
-.hvui-iconfont-mico:before { content: "\e60e"; }
-.hvui-iconfont-myFirend:before { content: "\e60f"; }
-.hvui-iconfont-myPost:before { content: "\e610"; }
-.hvui-iconfont-near:before { content: "\e611"; }
-.hvui-iconfont-noImg:before { content: "\e612"; }
-.hvui-iconfont-post:before { content: "\e613"; }
-.hvui-iconfont-rubish:before { content: "\e614"; }
-.hvui-iconfont-sortUp:before { content: "\e615"; }
-.hvui-iconfont-sortDown:before { content: "\e616"; }
-.hvui-iconfont-voice:before { content: "\e617"; }
-.hvui-iconfont-write:before { content: "\e619"; }
-.hvui-iconfont-share:before { content: "\e61a"; }
+.hvui-iconfont-plus:before { content: "\e600"; }
+.hvui-iconfont-up-circle:before { content: "\e601"; }
+.hvui-iconfont-checkmark-circle:before { content: "\e602"; }
+.hvui-iconfont-down-circle:before { content: "\e603"; }
+.hvui-iconfont-left:before { content: "\e604"; }
+.hvui-iconfont-left-circle:before { content: "\e605"; }
+.hvui-iconfont-right:before { content: "\e606"; }
+.hvui-iconfont-right-circle:before { content: "\e607"; }
+.hvui-iconfont-up:before { content: "\e608"; }
+.hvui-iconfont-down:before { content: "\e609"; }
+.hvui-iconfont-cross-circle:before { content: "\e60a"; }
+.hvui-iconfont-cross:before { content: "\e60b"; }
+.hvui-iconfont-plus-circle:before { content: "\e60c"; }
+.hvui-iconfont-minus-circle:before { content: "\e60d"; }
+.hvui-iconfont-menu:before { content: "\e60e"; }
+.hvui-iconfont-search:before { content: "\e60f"; }
+.hvui-iconfont-phone:before { content: "\e610"; }
+.hvui-iconfont-tag:before { content: "\e611"; }
+.hvui-iconfont-heart:before { content: "\e612"; }
+.hvui-iconfont-checkmark:before { content: "\e613"; }
+.hvui-iconfont-warning-circle:before { content: "\e614"; }
 /* hvui-unit end */
 .iconfont-list {
     margin: 0;
